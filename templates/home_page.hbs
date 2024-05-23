@@ -44,7 +44,18 @@
     </section>
   </section>
 
-  {{!-- <section class="section knowledge-base">
+  <section class="dummy form list">
+    <ul>
+      {{#each forms}}
+      <li>
+        <a href="{{url}}">
+          <span class="form-name">{{name}}</span>
+          <span class="form-description">{{description}}</span>
+        </a>
+    </ul>
+  </section>
+
+  <section class="section knowledge-base">
     <h2 class="visibility-hidden">{{ t 'categories' }}</h2>
     <section class="categories blocks">
       <ul class="blocks-list">
@@ -106,7 +117,7 @@
 
     <div class="community-image"></div>
   </section>
-  {{/if}} --}}
+  {{/if}}
 
   <section class="section home-section activity">
     {{#if settings.show_recent_activity}}
